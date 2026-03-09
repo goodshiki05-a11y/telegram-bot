@@ -1,7 +1,7 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, ChatJoinRequestHandler, ContextTypes
 
-TOKEN = "TOKENINGNI_SHU_YERGA_QOY"
+TOKEN = "8647126204:AAGbOEu1kIlVDQRM-14SYWLC8hDyBrXWyeI"
 
 VIP_LINK_1 = "https://t.me/+op27YdlLqpo5ZmEy"
 VIP_LINK_2 = "https://t.me/+3TAQgBgnShhiZTU6"
@@ -33,3 +33,4 @@ app.add_handler(ChatJoinRequestHandler(join))
 print("Bot ishladi o'chirib qo'yma...")
 
 app.run_polling()
+
