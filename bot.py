@@ -1,10 +1,12 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, ChatJoinRequestHandler, ContextTypes
 
-TOKEN = "8647126204:AAGbOEu1kIlVDQRM-14SYWLC8hDyBrXWyeI"
+TOKEN = "8647126204:AAFO5NRWQud8ATjwVh8r30QV0pn_Av6K5so"
 
-VIP_LINK_1 = "https://t.me/+o3Pdl_i0quw3NGI6"
+VIP_LINK_1 = "https://t.me/+4QZ5jMN6vTczMjAy"
+
 VIP_LINK_2 = "https://t.me/+3TAQgBgnShhiZTU6"
+
 
 async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
     req = update.chat_join_request
@@ -33,3 +35,6 @@ app.add_handler(ChatJoinRequestHandler(join))
 print("Bot ishladi o'chirib qo'yma...")
 
 app.run_polling()
+
+
+
