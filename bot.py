@@ -3,7 +3,7 @@ from telegram.ext import ApplicationBuilder, ChatJoinRequestHandler, ContextType
 
 TOKEN = "8647126204:AAGbOEu1kIlVDQRM-14SYWLC8hDyBrXWyeI"
 
-VIP_LINK_1 = "https://t.me/+op27YdlLqpo5ZmEy"
+VIP_LINK_1 = "https://t.me/+o3Pdl_i0quw3NGI6"
 VIP_LINK_2 = "https://t.me/+3TAQgBgnShhiZTU6"
 
 async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -33,4 +33,3 @@ app.add_handler(ChatJoinRequestHandler(join))
 print("Bot ishladi o'chirib qo'yma...")
 
 app.run_polling()
-
