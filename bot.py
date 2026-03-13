@@ -7,32 +7,23 @@ VIP_LINK = "https://t.me/+c6cK0y1bYHc2M2Qy"
 async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
     req = update.chat_join_request
 
-    # Join requestni tasdiqlash
-    await context.bot.approve_chat_join_request(
-        chat_id=req.chat.id,
-        user_id=req.from_user.id
-    )
+    text = """Siz Just Forex kanalga zayavka yubordingiz.
 
-    text = """𝗦𝗶𝘇𝗻𝗶𝗻𝗴 ᴊᴜꜱᴛ ꜰᴏʀᴇx 𝗞𝗔𝗡𝗔𝗟𝗜𝗚𝗔 𝗾𝗼'𝘀𝗵𝗶𝗹𝗶𝘀𝗵 𝘀𝗼'𝗿𝗼𝘃𝗶𝗻𝗴𝗶𝘇 𝗺𝘂𝘃𝗮𝗳𝗳𝗮𝗾𝗶𝘆𝗮𝘁𝗹𝗶 𝘁𝗮𝘀𝗱𝗶𝗾𝗹𝗮𝗻𝗱𝗶 ✅
-
-🎁 𝗦𝗶𝘇𝗴𝗮 𝗯𝗼𝗻𝘂𝘀 𝘀𝗶𝗳𝗮𝘁𝗶𝗱𝗮 𝗯𝗶𝘇𝗻𝗶𝗻𝗴 𝗩𝗜𝗣 𝗞𝗔𝗡𝗔𝗟𝗜𝗠𝗜𝗭 𝗾𝗼‘𝘀𝗵𝗶𝗯 𝗯𝗲𝗿𝗶𝗹𝗱𝗶❗️"""
+🎁 Bonus sifatida VIP kanalimizga taklif 👇"""
 
     keyboard = [
-        [InlineKeyboardButton("VIP KANAL", url=VIP_LINK)]
+        [InlineKeyboardButton("🚀 VIP KANAL", url=VIP_LINK)]
     ]
-
-    reply_markup = InlineKeyboardMarkup(keyboard)
 
     await context.bot.send_message(
         chat_id=req.from_user.id,
         text=text,
-        reply_markup=reply_markup,
-        disable_web_page_preview=True
+        reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
 app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(ChatJoinRequestHandler(join))
 
-print("Bot ishladi o'chirmang...")
+print("Bot ishladi...")
 
 app.run_polling()
