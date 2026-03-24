@@ -5,7 +5,7 @@ TOKEN = "8647126204:AAEg80wQoRjR04HQpNlYyzblbaHbUT50neg"
 
 VIP_LINK_1 = "https://t.me/+c6cK0y1bYHc2M2Qy"
 VIP_LINK_2 = "https://t.me/+3TAQgBgnShhiZTU6"
-VIP_LINK_3 = "https://t.me/+vYf4s8bUM40zNzU6"  
+VIP_LINK_3 = "https://t.me/+Kwa0X1H578EyOWIy"  
 
 async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
     req = update.chat_join_request
