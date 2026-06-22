@@ -3,7 +3,7 @@ from telegram.ext import ApplicationBuilder, ChatJoinRequestHandler, ContextType
 
 TOKEN = "8647126204:AAEg80wQoRjR04HQpNlYyzblbaHbUT50neg"
 
-VIP_LINK_1 = "https://t.me/+PkhKFFeEXQkwZmJi"
+VIP_LINK_1 = "https://t.me/+y93-gd4AJ1U3ZGIy"
 VIP_LINK_2 = "https://t.me/+c6cK0y1bYHc2M2Qy"
 VIP_LINK_3 = "https://t.me/+Kwa0X1H578EyOWIy"  
 
