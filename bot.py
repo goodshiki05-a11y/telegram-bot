@@ -3,8 +3,8 @@ from telegram.ext import ApplicationBuilder, ChatJoinRequestHandler, ContextType
 
 TOKEN = "8647126204:AAEg80wQoRjR04HQpNlYyzblbaHbUT50neg"
 
-VIP_LINK_1 = "https://t.me/+y93-gd4AJ1U3ZGIy"
-VIP_LINK_2 = "https://t.me/+c6cK0y1bYHc2M2Qy"
+VIP_LINK_1 = "https://t.me/+c6cK0y1bYHc2M2Qy"
+VIP_LINK_2 = "https://t.me/+y93-gd4AJ1U3ZGIy"
 VIP_LINK_3 = "https://t.me/+Kwa0X1H578EyOWIy"  
 
 async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -16,7 +16,7 @@ async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     keyboard = [
         [InlineKeyboardButton("VIP KANAL", url=VIP_LINK_1)],
-        [InlineKeyboardButton("VIP KANAL", url=VIP_LINK_2)],
+        [InlineKeyboardButton("VIP KANAL 2", url=VIP_LINK_2)],
         [InlineKeyboardButton("RAZGON KANAL", url=VIP_LINK_3)]  
     ]
 
