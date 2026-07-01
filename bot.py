@@ -16,7 +16,7 @@ async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     keyboard = [
         [InlineKeyboardButton("VIP KANAL", url=VIP_LINK_1)],
-        [InlineKeyboardButton("VIP KANAL 2", url=VIP_LINK_2)],
+        [InlineKeyboardButton("VIP KANAL2", url=VIP_LINK_2)],
         [InlineKeyboardButton("RAZGON KANAL", url=VIP_LINK_3)]  
     ]
 
