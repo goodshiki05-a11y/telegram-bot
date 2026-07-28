@@ -4,8 +4,7 @@ from telegram.ext import ApplicationBuilder, ChatJoinRequestHandler, ContextType
 TOKEN = "8647126204:AAGDBVd9NQ2qMvhvMtqVSdWUoC5TsmJd-js"
 
 VIP_LINK_1 = "https://t.me/+c6cK0y1bYHc2M2Qy"
-VIP_LINK_2 = "https://t.me/+y93-gd4AJ1U3ZGIy"
-VIP_LINK_3 = "https://t.me/+Kwa0X1H578EyOWIy"  
+VIP_LINK_2 = "https://t.me/+Kwa0X1H578EyOWIy"  
 
 async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
     req = update.chat_join_request
@@ -16,8 +15,7 @@ async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     keyboard = [
         [InlineKeyboardButton("VIP KANAL", url=VIP_LINK_1)],
-        [InlineKeyboardButton("VIP KANAL2", url=VIP_LINK_2)],
-        [InlineKeyboardButton("RAZGON KANAL", url=VIP_LINK_3)]  
+        [InlineKeyboardButton("RAZGON KANAL", url=VIP_LINK_2)], 
     ]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
