@@ -1,10 +1,11 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, ChatJoinRequestHandler, ContextTypes
 
-TOKEN = "8647126204:AAF3h2ZvLXpV4pEkBJ9QoDSLhu3RpVecMQU"
+TOKEN = "YANGI_BOT_TOKENINGNI_SHU_YERGA_QOY"
 
-VIP_LINK_1 = "https://t.me/+c6cK0y1bYHc2M2Qy" 
-VIP_LINK_2 = "https://t.me/+aDx8i46rgz1mMmQy"  
+VIP_LINK_1 = "https://t.me/+c6cK0y1bYHc2M2Qy"
+VIP_LINK_2 = "https://t.me/+aDx8i46rgz1mMmQy"
+
 
 async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
     req = update.chat_join_request
@@ -14,11 +15,9 @@ async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
 🎁 𝗦𝗶𝘇𝗴𝗮 𝗯𝗼𝗻𝘂𝘀 𝘀𝗶𝗳𝗮𝘁𝗶𝗱𝗮 𝗯𝗶𝘇𝗻𝗶𝗻𝗴 𝗩𝗜𝗣 𝗞𝗔𝗡𝗔𝗟𝗜𝗠𝗜𝗭 𝗾𝗼‘𝘀𝗵𝗶𝗯 𝗯𝗲𝗿𝗶𝗹𝗱𝗶❗️"""
 
     keyboard = [
-    [InlineKeyboardButton("🎁 VIP KANAL 1", url=VIP_LINK_1)],
-    [InlineKeyboardButton("🎁 VIP KANAL 2", url=VIP_LINK_2)],
-]
-
-reply_markup = InlineKeyboardMarkup(keyboard)
+        [InlineKeyboardButton("🎁 VIP KANAL 1", url=VIP_LINK_1)],
+        [InlineKeyboardButton("🎁 VIP KANAL 2", url=VIP_LINK_2)],
+    ]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
@@ -29,9 +28,10 @@ reply_markup = InlineKeyboardMarkup(keyboard)
         disable_web_page_preview=True
     )
 
+
 app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(ChatJoinRequestHandler(join))
 
-print("Bot ishladi o'chirib qo'yma...")
+print("Bot ishga tushdi!")
 
 app.run_polling()
