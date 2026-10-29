@@ -1,7 +1,7 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, ChatJoinRequestHandler, ContextTypes
 
-TOKEN = "8647126204:AAGY6Qw3ROwH8ygolEsM4_j2YDWH_c5ws0Q"
+TOKEN = "8647126204:AAF3h2ZvLXpV4pEkBJ9QoDSLhu3RpVecMQU"
 
 VIP_LINK_1 = "https://t.me/+c6cK0y1bYHc2M2Qy" 
 VIP_LINK_2 = "https://t.me/+aDx8i46rgz1mMmQy"  
